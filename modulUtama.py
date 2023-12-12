@@ -24,8 +24,8 @@ if __name__ == "__main__":
 
     print("\n7 Peringkat Dokumen Teratas:")
     for doc_idx, i in top_documents:
-        #if(i == 0 or i == 0.0 or i == 0.1):
-        #    exit()
+        if(i == 0 or i == 0.0 or i == 0.1):
+            exit()
 
         print(f"No. index {doc_idx}: Score {i}. {data[doc_idx]}")
         print()
